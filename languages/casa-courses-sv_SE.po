@@ -1,0 +1,1297 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/casa-wordpress-"
+"plugin\n"
+"POT-Creation-Date: 2024-09-18T13:57:14+00:00\n"
+"PO-Revision-Date: 2024-09-18 15:58+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: includes\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#. Plugin Name of the plugin
+msgid "Casa Courses"
+msgstr "Casa Kurser"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/Foretagsakademin/casa-courses"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Connect your Casa installation to your WordPress installation. With the "
+"plugin you will be able to list all of your templates and events. Your "
+"visitors will be able to book themselves on events with available seats."
+msgstr ""
+"Koppla ihop din WordPress hemsida med din Casa installation. Med detta "
+"plugin kan du visa alla dina kursmallar och kurstillfällen. Dina besökare "
+"kommer sedan kunna boka sig på kurstillfällen som har lediga platser."
+
+#. Author of the plugin
+msgid "foretagsakademincasa"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.foretagsakademin.se"
+msgstr ""
+
+#: admin/class-casa_courses-admin.php:203
+#: includes/helpers/class-casa_courses_api.php:170
+#: includes/helpers/class-casa_courses_api.php:194
+msgid "Error: Invalid Token"
+msgstr "Fel: Ogiltig token"
+
+#: admin/class-casa_courses-admin.php:214
+msgid "Invalid nonce specified"
+msgstr "Ogiltig nonce använd"
+
+#: admin/class-casa_courses-admin.php:214
+msgid "Error"
+msgstr "Fel"
+
+#: admin/class-casa_courses-admin.php:231
+#: includes/init/class-casa_courses-custom-posttype_courses.php:41
+msgid "Casa courses"
+msgstr "Casa kurser"
+
+#. translators: 1: number of course areas loaded
+#: admin/class-casa_courses-admin.php:251
+msgid "There is currently <strong>%1$s</strong> course areas loaded from Casa."
+msgstr ""
+"Det finns för närvarande <strong>%1$s</strong> kursområden inlästa från Casa."
+
+#. translators: 1: number of courses loaded
+#: admin/class-casa_courses-admin.php:254
+msgid "There is currently <strong>%1$s</strong> courses loaded from Casa."
+msgstr ""
+"Det finns för närvarande <strong>%1$s</strong> kursmallar inlästa från Casa."
+
+#. translators: 1: number of events loaded
+#: admin/class-casa_courses-admin.php:257
+msgid "There is currently <strong>%1$s</strong> events loaded from Casa."
+msgstr ""
+"Det finns för närvarande <strong>%1$s</strong> kurstillfällen inlästa från "
+"Casa."
+
+#: includes/class-casa_courses-activator.php:79
+msgid "Contact us if interested"
+msgstr "Kontakta oss vid intresse"
+
+#: includes/class-casa_courses-activator.php:80
+msgid "Few seats remaining"
+msgstr "Fåtal platser kvar"
+
+#: includes/class-casa_courses-activator.php:81
+msgid "Fully booked"
+msgstr "Fullbokad"
+
+#: includes/class-casa_courses-activator.php:94
+#: includes/init/class-casa_courses-custom-posttype_courses.php:37
+#: includes/init/class-casa_courses-custom-posttype_courses.php:39
+#: includes/init/class-casa_courses-custom-posttype_courses.php:42
+#: public/class-casa_courses-public.php:518
+msgid "Courses"
+msgstr "Kurser"
+
+#: includes/class-casa_courses-activator.php:103
+#: includes/class-casa_courses-menu.php:962
+msgid "Course Calendar"
+msgstr "Kurskalender"
+
+#: includes/class-casa_courses-activator.php:108
+#: includes/class-casa_courses-menu.php:888
+#: includes/class-casa_courses-routes.php:109
+#: public/class-casa_courses-public.php:633
+#: public/class-casa_courses-public.php:768
+msgid "Book"
+msgstr "Boka"
+
+#: includes/class-casa_courses-init.php:238
+#: public/class-casa_courses-public.php:1025
+#: public/class-casa_courses-public.php:1029
+#: public/class-casa_courses-public.php:1119
+#: public/class-casa_courses-public.php:1123
+#: public/class-casa_courses-public.php:1216
+#: public/class-casa_courses-public.php:1220
+msgid "Phone"
+msgstr "Telefon"
+
+#: includes/class-casa_courses-init.php:239
+msgid "Name"
+msgstr "Namn"
+
+#: includes/class-casa_courses-init.php:240
+msgid "E-mailaddress"
+msgstr "E-postadress"
+
+#: includes/class-casa_courses-init.php:241
+#: includes/class-casa_courses-menu.php:1148
+msgid "Status"
+msgstr "Status"
+
+#: includes/class-casa_courses-init.php:242
+msgid "Booked"
+msgstr "Bokad"
+
+#: includes/class-casa_courses-init.php:243
+msgid "Not booked"
+msgstr "Ej bokade"
+
+#: includes/class-casa_courses-init.php:244
+msgid "Waiting list"
+msgstr "Väntelista"
+
+#: includes/class-casa_courses-init.php:246
+msgid "Successfully booked participants"
+msgstr "Deltagarna bokades"
+
+#: includes/class-casa_courses-init.php:258
+msgid "There was an error with the form data."
+msgstr "Det blev ett fel med informationen i formuläret."
+
+#: includes/class-casa_courses-init.php:264
+msgid "Invalid nonce specified."
+msgstr "Ogiltig nonce använd."
+
+#: includes/class-casa_courses-menu.php:104
+msgid "Primary color"
+msgstr "Primärfärg"
+
+#: includes/class-casa_courses-menu.php:118
+msgid "Secondary color"
+msgstr "Sekundärfärg"
+
+#: includes/class-casa_courses-menu.php:132
+msgid "Font"
+msgstr "Font"
+
+#: includes/class-casa_courses-menu.php:138
+msgid "Inherit"
+msgstr "Ärv"
+
+#: includes/class-casa_courses-menu.php:139
+msgid "Roboto"
+msgstr "Roboto"
+
+#: includes/class-casa_courses-menu.php:140
+msgid "DM Sans"
+msgstr "DM Sans"
+
+#: includes/class-casa_courses-menu.php:149
+msgid "Area box font size"
+msgstr "Font storlek för kursområdeslåda"
+
+#: includes/class-casa_courses-menu.php:164
+msgid "Number of area boxes on the desktop"
+msgstr "Antal kursområdeslådor på desktop"
+
+#: includes/class-casa_courses-menu.php:179
+msgid "Price text position"
+msgstr "Pristext placering"
+
+#: includes/class-casa_courses-menu.php:185
+msgid "Left"
+msgstr "Vänster"
+
+#: includes/class-casa_courses-menu.php:186
+msgid "Center"
+msgstr "Centrerad"
+
+#: includes/class-casa_courses-menu.php:196
+msgid "Area boxes text color"
+msgstr "Färg på text i kursområdeslådor"
+
+#: includes/class-casa_courses-menu.php:211
+msgid "Area boxes background color"
+msgstr "Bakgrundsfärg på kursområdeslådor"
+
+#: includes/class-casa_courses-menu.php:226
+msgid "Area list text color"
+msgstr "Kursområden - text färg"
+
+#: includes/class-casa_courses-menu.php:241
+msgid "\"Price and duration\" text color"
+msgstr "\"Pris och längd\" textfärg"
+
+#: includes/class-casa_courses-menu.php:255
+msgid "\"Price and duration\" background color"
+msgstr "\"Pris och längd\" bakgrundsfärg"
+
+#: includes/class-casa_courses-menu.php:269
+msgid "\"Price and duration\" border color"
+msgstr "\"Pris och längd\" ramfärg"
+
+#: includes/class-casa_courses-menu.php:283
+msgid "Event boxes text color"
+msgstr "Textfärg för kurstillfälleslådor"
+
+#: includes/class-casa_courses-menu.php:297
+msgid "Event boxes background color"
+msgstr "Bakgrundsfärg för kurstillfälleslådor"
+
+#: includes/class-casa_courses-menu.php:311
+msgid "Event boxes button text color"
+msgstr "Färg för texten på knappen i kurstillfälleslådor"
+
+#: includes/class-casa_courses-menu.php:325
+msgid "Event boxes button background color"
+msgstr "Bakgrundsfärg på knappen i kurstillfälleslådor"
+
+#: includes/class-casa_courses-menu.php:339
+msgid "Few seats remaining text color"
+msgstr "Textfärg för få platser kvar text"
+
+#: includes/class-casa_courses-menu.php:353
+msgid "Fully booked text color"
+msgstr "Textfärg för fullbokad text"
+
+#: includes/class-casa_courses-menu.php:367
+msgid "Course booking button text color"
+msgstr "Textfärg för bokningsknappen"
+
+#: includes/class-casa_courses-menu.php:381
+msgid "Course booking button background color"
+msgstr "Bakgrundsfärg för bokningsknappen"
+
+#: includes/class-casa_courses-menu.php:395
+msgid "Show corporate fields"
+msgstr "Visa företagsinformation"
+
+#: includes/class-casa_courses-menu.php:403
+#: includes/class-casa_courses-menu.php:419
+#: includes/class-casa_courses-menu.php:435
+#: includes/class-casa_courses-menu.php:451
+#: includes/class-casa_courses-menu.php:467
+#: includes/class-casa_courses-menu.php:483
+#: includes/class-casa_courses-menu.php:499
+#: includes/class-casa_courses-menu.php:515
+#: includes/class-casa_courses-menu.php:532
+#: includes/class-casa_courses-menu.php:549
+#: includes/class-casa_courses-menu.php:859
+#: includes/class-casa_courses-menu.php:1004
+msgid "yes"
+msgstr "ja"
+
+#: includes/class-casa_courses-menu.php:404
+#: includes/class-casa_courses-menu.php:420
+#: includes/class-casa_courses-menu.php:436
+#: includes/class-casa_courses-menu.php:452
+#: includes/class-casa_courses-menu.php:468
+#: includes/class-casa_courses-menu.php:484
+#: includes/class-casa_courses-menu.php:500
+#: includes/class-casa_courses-menu.php:516
+#: includes/class-casa_courses-menu.php:533
+#: includes/class-casa_courses-menu.php:550
+#: includes/class-casa_courses-menu.php:860
+#: includes/class-casa_courses-menu.php:1005
+msgid "no"
+msgstr "nej"
+
+#: includes/class-casa_courses-menu.php:411
+msgid "Corporate fields are required"
+msgstr "Gör företagsinformation obligatorisk"
+
+#: includes/class-casa_courses-menu.php:427
+msgid "Show corporate ID field"
+msgstr "Visa organisationsnummer"
+
+#: includes/class-casa_courses-menu.php:443
+msgid "Corporate ID field is required"
+msgstr "Gör organisationsnummer obligatorisk"
+
+#: includes/class-casa_courses-menu.php:459
+msgid "Show industry field"
+msgstr "Visa bransch"
+
+#: includes/class-casa_courses-menu.php:475
+msgid "Industry field is required"
+msgstr "Gör bransch obligatorisk"
+
+#: includes/class-casa_courses-menu.php:491
+msgid "Show dietary preferences field"
+msgstr "Visa kostpreferens"
+
+#: includes/class-casa_courses-menu.php:507
+msgid "Disable caching"
+msgstr "Inaktivera cachelagring"
+
+#: includes/class-casa_courses-menu.php:519
+msgid "Disable browser caching on all pages created by plugin."
+msgstr "Inaktivera webbläsarcache på alla sidor som skapats av pluginet."
+
+#: includes/class-casa_courses-menu.php:524
+msgid "Allow waiting list"
+msgstr "Tillåt väntelista"
+
+#: includes/class-casa_courses-menu.php:536
+msgid "If the event is fully booked, a waiting list is created in CASA."
+msgstr "Vid fullbokat kurstillfälle skapas en väntelista i CASA."
+
+#: includes/class-casa_courses-menu.php:541
+msgid "Show price"
+msgstr "Visa pris"
+
+#: includes/class-casa_courses-menu.php:557
+msgid "Remaining seats when \"limited availability\" is activated"
+msgstr "Antal platser då \"Fåtal platser kvar\" ska visas"
+
+#: includes/class-casa_courses-menu.php:566
+msgid ""
+"Enter the amount of seats that should be available when the \"limited "
+"availability\" warning should be shown."
+msgstr "Ange det antal lediga platser då \"Fåtal platser\" varning ska visas."
+
+#: includes/class-casa_courses-menu.php:572
+msgid "Hide course date before course start"
+msgstr "Antal dagar innan kursstart som kurserna ska döljas"
+
+#: includes/class-casa_courses-menu.php:581
+msgid ""
+"This setting hides course starts that are less than the set number of days "
+"away. The lowest setting is 1 (i.e. tomorrow)."
+msgstr ""
+"Denna inställning reglerar hur länge i förväg ett kurstillfälle ska visas. "
+"Lägst inställning är 1 (dvs imorgon)."
+
+#: includes/class-casa_courses-menu.php:586
+msgid "Courses root slug"
+msgstr "Slug för kurser"
+
+#: includes/class-casa_courses-menu.php:596
+msgid ""
+"Enter the slug used as a prefix to the course detail pages. For example with "
+"\"courses\" a course detail page would be shown on \"example.com/courses/"
+"course-detail\""
+msgstr ""
+"Ange den slug som ska användas som prefix för kurssidorna. Tex med "
+"\"utbildning\" skulle en kursinformationsida bli \"example.com/utbildning/"
+"kurs1\""
+
+#: includes/class-casa_courses-menu.php:601
+msgid "Text when no events are scheduled"
+msgstr "Text som ska visas när inga kurstillfällen är schemalagda"
+
+#: includes/class-casa_courses-menu.php:611
+msgid ""
+"Enter the text that should be shown when there are no (upcoming) events "
+"scheduled."
+msgstr ""
+"Ange den text som ska visas när det inte finns några schemalagda "
+"kurstillfällen."
+
+#: includes/class-casa_courses-menu.php:616
+msgid "Text when few seats are remaining on the event"
+msgstr "Text som ska visas som fåtal platser kvar varning"
+
+#: includes/class-casa_courses-menu.php:626
+msgid ""
+"Enter the text that should be shown when there are few seats remaining on an "
+"event."
+msgstr ""
+"Ange den text som ska visas när det är ett fåtal platser kvar på ett "
+"kurstillfälle."
+
+#: includes/class-casa_courses-menu.php:631
+msgid "Text when the event is sold out"
+msgstr "Text som ska visas vid fullbokad"
+
+#: includes/class-casa_courses-menu.php:641
+msgid ""
+"Enter the text that should be shown when there are no seats remaining on an "
+"event."
+msgstr "Ange den text som ska visas när ett kurstillfälle är fullbokad."
+
+#: includes/class-casa_courses-menu.php:646
+msgid "Separator for title"
+msgstr "Avskiljare för titel"
+
+#: includes/class-casa_courses-menu.php:656
+msgid ""
+"Enter the separator that should be used between the title name and site name."
+msgstr ""
+"Ange avskiljaren som ska användas mellan titelnamnet och webbplatsens namn."
+
+#: includes/class-casa_courses-menu.php:661
+msgid "Booking policy link"
+msgstr "Länk till bokningsvillkor"
+
+#: includes/class-casa_courses-menu.php:670
+msgid ""
+"Enter the link to a page that shows your sites booking policy. If this is "
+"empty the person booking won't see a checkbox for accepting a booking policy."
+msgstr ""
+"Ange länken till den sidan som ska visas för bokningsvillkor. Är detta fält "
+"tomt, så kommer inte något fält för bokningsvillkor att visas."
+
+#: includes/class-casa_courses-menu.php:675
+msgid "Booking policy text"
+msgstr "Text till fältet för bokningsvillkor"
+
+#: includes/class-casa_courses-menu.php:684
+msgid ""
+"Enter the text that should be shown beside the checkbox for accepting the "
+"booking policy."
+msgstr ""
+"Ange den text som ska visas bredvid kryssrutan för att acceptera "
+"bokningspolicyn."
+
+#: includes/class-casa_courses-menu.php:689
+msgid "Privacy policy link"
+msgstr "Länk till personuppgiftspolicy"
+
+#: includes/class-casa_courses-menu.php:698
+msgid ""
+"Enter the link to a page that shows your sites privacy policy. If this is "
+"empty the person booking won't see a checkbox for accepting a privacy policy."
+msgstr ""
+"Ange länken till den sidan som ska visas för personuppgiftspolicy. Är detta "
+"fält tomt, så kommer inte något fält för personuppgiftspolicy att visas."
+
+#: includes/class-casa_courses-menu.php:703
+msgid "Privacy policy text"
+msgstr "Text till personuppgiftspolicy"
+
+#: includes/class-casa_courses-menu.php:712
+msgid ""
+"Enter the text that should be shown beside the checkbox for accepting the "
+"privacy policy."
+msgstr ""
+"Ange den text som ska visas bredvid kryssrutan för att acceptera "
+"personuppgiftspolicyn."
+
+#: includes/class-casa_courses-menu.php:717
+msgid "Google reCAPTCHA V3 site key"
+msgstr ""
+
+#: includes/class-casa_courses-menu.php:726
+msgid ""
+"Enter a Google reCAPTCHA key to be used on the booking page (optional). The "
+"admin console can be found <a href=\"https://www.google.com/recaptcha/admin/"
+"\" target=\"_blank\">here</a>."
+msgstr ""
+"Ange en Google reCAPTCHA site nyckel som då används på bokningssidan (ej "
+"obligatoriskt). Admin för Google reCAPTCHA finns <a href=\"https://www."
+"google.com/recaptcha/admin/\" target=\"_blank\">här</a>."
+
+#: includes/class-casa_courses-menu.php:731
+msgid "Synchronize data:"
+msgstr "Synkronisera data:"
+
+#: includes/class-casa_courses-menu.php:741
+msgid ""
+"Synchronize data with CASA. Regular synchronization with CASA takes place "
+"automatically."
+msgstr ""
+"Synkar data med CASA. Regelbunden synkning med CASA sker per automatik."
+
+#: includes/class-casa_courses-menu.php:746
+msgid "Industry last loaded:"
+msgstr "Branscher uppdaterades senast:"
+
+#: includes/class-casa_courses-menu.php:755
+#: includes/class-casa_courses-menu.php:770
+#: includes/class-casa_courses-menu.php:785
+#: includes/class-casa_courses-menu.php:800
+#: includes/class-casa_courses-menu.php:815
+msgid "Not synchronized"
+msgstr "Ej uppdaterat"
+
+#: includes/class-casa_courses-menu.php:756
+msgid "Last time industry was synchronized from CASA."
+msgstr "Senaste tidpunkt branscher uppdaterades från CASA."
+
+#: includes/class-casa_courses-menu.php:761
+msgid "Dietary preferences last loaded:"
+msgstr "Kostpreferenser uppdaterades senast:"
+
+#: includes/class-casa_courses-menu.php:771
+msgid "Last time dietary preferences were synchronized from CASA."
+msgstr "Senaste tidpunkt kostpreferenser uppdaterades från CASA."
+
+#: includes/class-casa_courses-menu.php:776
+msgid "Areas last loaded:"
+msgstr "Kursområden uppdaterade senast:"
+
+#: includes/class-casa_courses-menu.php:786
+msgid "Last time areas were synchronized from CASA."
+msgstr "Senaste tidpunkt kursområden uppdaterades från CASA."
+
+#: includes/class-casa_courses-menu.php:791
+msgid "Templates last loaded:"
+msgstr "Kursmallar uppdaterades senast:"
+
+#: includes/class-casa_courses-menu.php:801
+msgid "Last time templates were synchronized from CASA."
+msgstr "Senaste tidpunkt kursmallar uppdaterades från CASA."
+
+#: includes/class-casa_courses-menu.php:806
+msgid "Events last loaded:"
+msgstr "Kurstillfällen uppdaterades senast:"
+
+#: includes/class-casa_courses-menu.php:816
+msgid "Last time events were synchronized from CASA."
+msgstr "Senaste tidpunkt kurstillfällen uppdaterades från CASA."
+
+#: includes/class-casa_courses-menu.php:821
+#: includes/class-casa_courses-menu.php:881
+#: includes/class-casa_courses-menu.php:954
+msgid "Title"
+msgstr "Rubrik"
+
+#: includes/class-casa_courses-menu.php:831
+msgid "Enter the title for the course listing page."
+msgstr "Ange rubriken för kurslistningssidan."
+
+#: includes/class-casa_courses-menu.php:836
+#: includes/class-casa_courses-menu.php:895
+#: includes/class-casa_courses-menu.php:968
+#: includes/init/class-casa_courses-custom-posttype_courses.php:134
+#: includes/init/class-casa_courses-custom-posttype_courses.php:143
+msgid "Description"
+msgstr "Beskrivning"
+
+#: includes/class-casa_courses-menu.php:846
+msgid "Enter the description for the course listing page."
+msgstr "Ange beskrivningen som står på kurslistningssidan."
+
+#: includes/class-casa_courses-menu.php:851
+#: includes/class-casa_courses-menu.php:996
+msgid "Show course area boxes"
+msgstr "Visa box per kursområde"
+
+#: includes/class-casa_courses-menu.php:867
+msgid "Booking page slug"
+msgstr "Slug för bokningssidan"
+
+#: includes/class-casa_courses-menu.php:890
+msgid "Enter the title for the booking page."
+msgstr "Ange rubriken för bokningssidan."
+
+#: includes/class-casa_courses-menu.php:905
+msgid "Enter the description for the booking page."
+msgstr "Ange beskrivningen som står på bokningssidan innan bokning."
+
+#: includes/class-casa_courses-menu.php:910
+msgid "Booking confirmation text"
+msgstr "Text på bokningsbekräftelse"
+
+#: includes/class-casa_courses-menu.php:920
+msgid "Enter the text that should be shown for a successful booking."
+msgstr "Ange den text som ska visas för efter en bokning har lyckats."
+
+#: includes/class-casa_courses-menu.php:925
+msgid "Unsuccessful booking text"
+msgstr "Felmeddelande vid bokning"
+
+#: includes/class-casa_courses-menu.php:935
+msgid "Enter the tex that should be shown for an unsuccessful booking."
+msgstr "Ange den text som ska visas när en bokning har misslyckats."
+
+#: includes/class-casa_courses-menu.php:940
+msgid "Courses calendar root slug"
+msgstr "Slug för kurskalender"
+
+#: includes/class-casa_courses-menu.php:963
+msgid "Enter the title for the course calendar page."
+msgstr "Ange rubriken för kurskalendersidan."
+
+#: includes/class-casa_courses-menu.php:978
+msgid "Enter the description for the course calendar page."
+msgstr "Ange beskrivningen som står på kurskalendersidan."
+
+#: includes/class-casa_courses-menu.php:983
+msgid "Number of months to display in calendar view"
+msgstr "Antal månader som ska visas i kurskalendern"
+
+#: includes/class-casa_courses-menu.php:1012
+msgid "Header template"
+msgstr ""
+
+#: includes/class-casa_courses-menu.php:1027
+msgid "Footer template"
+msgstr ""
+
+#: includes/class-casa_courses-menu.php:1070
+msgid "Casa settings"
+msgstr "Casa inställningar"
+
+#: includes/class-casa_courses-menu.php:1077
+#: includes/class-casa_courses-menu.php:1078
+#: includes/class-casa_courses-menu.php:1456
+#: includes/class-casa_courses-menu.php:1468
+msgid "Settings"
+msgstr "Inställningar"
+
+#: includes/class-casa_courses-menu.php:1089
+#: includes/class-casa_courses-menu.php:1090
+#: includes/class-casa_courses-menu.php:1377
+msgid "Styling"
+msgstr "Stilinställningar"
+
+#: includes/class-casa_courses-menu.php:1101
+#: includes/class-casa_courses-menu.php:1102
+#: includes/class-casa_courses-menu.php:1113
+#: includes/class-casa_courses-menu.php:1114
+msgid "Token"
+msgstr "Token"
+
+#: includes/class-casa_courses-menu.php:1147
+msgid "Token settings"
+msgstr "Token inställningar"
+
+#: includes/class-casa_courses-menu.php:1151
+msgid "Active"
+msgstr "Aktiv"
+
+#: includes/class-casa_courses-menu.php:1154
+msgid "Inactive"
+msgstr "Inaktiv"
+
+#: includes/class-casa_courses-menu.php:1161
+msgid "Add Token"
+msgstr "Lägg till Token"
+
+#: includes/class-casa_courses-menu.php:1163
+msgid "Remove Token"
+msgstr "Radera Token"
+
+#: includes/class-casa_courses-menu.php:1174
+msgid ""
+"Your unique Token is generated by the Casa Team. Please contact <a href="
+"\"mailto:support@casaclient.se\">support@casaclient.se</a> if you need any "
+"assistance."
+msgstr ""
+"Din unika Token genereras av Casa. Vänligen kontakta <a href=\"mailto:"
+"support@casaclient.se\">support@casaclient.se</a>  om du behöver hjälp."
+
+#: includes/class-casa_courses-menu.php:1177
+msgid "You are not authorized to perform this operation."
+msgstr "Du har inte rättigheter för att utföra denna åtgärd."
+
+#: includes/class-casa_courses-menu.php:1190
+msgid "Domain:"
+msgstr "Domän:"
+
+#: includes/class-casa_courses-menu.php:1190
+msgid "Insert API Domain"
+msgstr "Ange Casa domän"
+
+#: includes/class-casa_courses-menu.php:1191
+msgid "Project ID:"
+msgstr "Projekt ID:"
+
+#: includes/class-casa_courses-menu.php:1191
+msgid "Insert Project ID"
+msgstr "Ange projekt ID"
+
+#: includes/class-casa_courses-menu.php:1192
+msgid "Token:"
+msgstr "Token:"
+
+#: includes/class-casa_courses-menu.php:1192
+msgid "Insert API Token"
+msgstr "Ange API Token"
+
+#: includes/class-casa_courses-menu.php:1270
+#: includes/init/class-casa_courses-custom-taxonomy_areas.php:120
+msgid "Select Image"
+msgstr "Välj bild"
+
+#: includes/class-casa_courses-menu.php:1274
+#: includes/class-casa_courses-menu.php:1275
+#: includes/init/class-casa_courses-custom-taxonomy_areas.php:123
+#: includes/init/class-casa_courses-custom-taxonomy_areas.php:124
+msgid "Remove Image"
+msgstr "Ta bort bild"
+
+#: includes/class-casa_courses-menu.php:1359
+#: includes/class-casa_courses-menu.php:1388
+#: includes/class-casa_courses-menu.php:1431
+msgid "General"
+msgstr "Allmänna inställningar"
+
+#: includes/class-casa_courses-menu.php:1363
+#: includes/class-casa_courses-menu.php:1396
+msgid "Course listing"
+msgstr "Kurslistning"
+
+#: includes/class-casa_courses-menu.php:1367
+#: includes/class-casa_courses-menu.php:1404
+msgid "Course detail"
+msgstr "Kursdetaljer"
+
+#: includes/class-casa_courses-menu.php:1371
+#: includes/class-casa_courses-menu.php:1412
+msgid "Course booking"
+msgstr "Kursbokning"
+
+#: includes/class-casa_courses-menu.php:1435
+msgid "Course list Page"
+msgstr "Kurslistningssida"
+
+#: includes/class-casa_courses-menu.php:1439
+msgid "Calendar Page"
+msgstr "Kalendersida"
+
+#: includes/class-casa_courses-menu.php:1443
+msgid "Booking page"
+msgstr "Bokningssida"
+
+#: includes/class-casa_courses-menu.php:1447
+msgid "Sync"
+msgstr "Synk"
+
+#: includes/class-casa_courses-menu.php:1451
+#: includes/class-casa_courses-menu.php:1508
+msgid "Header/Footer"
+msgstr "Header/Footer"
+
+#: includes/class-casa_courses-menu.php:1476
+msgid "Course list Page Settings"
+msgstr "Kurslistningsinställningar"
+
+#: includes/class-casa_courses-menu.php:1484
+msgid "Calendar Page Settings"
+msgstr "Kalenderinställningar"
+
+#: includes/class-casa_courses-menu.php:1492
+msgid "Registration Page Settings"
+msgstr "Bokningsinställningar"
+
+#: includes/class-casa_courses-menu.php:1500
+msgid "Synchronization"
+msgstr "Synkronisering"
+
+#: includes/helpers/class-casa_courses_api.php:47
+msgid "We have found a company with the same name as you entered:"
+msgstr "Vi har hittat ett företag med samma namn som det du angav:"
+
+#: includes/helpers/class-casa_courses_api.php:52
+msgid "Corporate ID:"
+msgstr "Organisationsnummer:"
+
+#: includes/helpers/class-casa_courses_api.php:62
+msgid "Address:"
+msgstr "Adress:"
+
+#: includes/helpers/class-casa_courses_api.php:74
+msgid "Do you want to use this company for your registration?"
+msgstr "Vill du använda detta företag för din registrering?"
+
+#: includes/helpers/class-casa_courses_api.php:113
+msgid "Error: Invalid Request"
+msgstr "Fel: Ogiltigt svar"
+
+#: includes/helpers/class-casa_courses_api.php:227
+msgid "Unable to decode returned JSON"
+msgstr "Kunde inte läsa in JSON"
+
+#: includes/init/class-casa_courses-custom-posttype_courses.php:40
+msgid "Course"
+msgstr "Kurs"
+
+#: includes/init/class-casa_courses-custom-posttype_courses.php:87
+#: includes/init/class-casa_courses-custom-posttype_events.php:67
+msgid "Details"
+msgstr "Detaljer"
+
+#: includes/init/class-casa_courses-custom-posttype_courses.php:92
+#: includes/init/class-casa_courses-custom-posttype_courses.php:147
+#: includes/init/class-casa_courses-custom-posttype_events.php:73
+#: includes/init/class-casa_courses-custom-posttype_events.php:171
+#: templates/single-course.php:93 templates/single-course.php:111
+msgid "Price"
+msgstr "Pris"
+
+#: includes/init/class-casa_courses-custom-posttype_courses.php:99
+#: includes/init/class-casa_courses-custom-posttype_events.php:79
+msgid "Currency"
+msgstr "Valuta"
+
+#: includes/init/class-casa_courses-custom-posttype_courses.php:106
+#: includes/init/class-casa_courses-custom-posttype_events.php:85
+msgid "Invoice Type"
+msgstr "Fakturatyp"
+
+#: includes/init/class-casa_courses-custom-posttype_courses.php:113
+#: includes/init/class-casa_courses-custom-posttype_courses.php:151
+msgid "Extra costs"
+msgstr "Extra kostnader"
+
+#: includes/init/class-casa_courses-custom-posttype_courses.php:120
+#: includes/init/class-casa_courses-custom-posttype_events.php:115
+msgid "ID"
+msgstr "ID"
+
+#: includes/init/class-casa_courses-custom-posttype_courses.php:127
+#: templates/single-course.php:91
+msgid "Number of days"
+msgstr "Antal dagar"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:29
+#: includes/init/class-casa_courses-custom-posttype_events.php:32
+msgid "Events"
+msgstr "Kurstillfällen"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:31
+msgid "Event"
+msgstr "Kurstillfälle"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:33
+msgid "Casa Events"
+msgstr "Casa kurstillfällen"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:91
+msgid "Start Date"
+msgstr "Startdatum"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:97
+msgid "End Date"
+msgstr "Slutdatum"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:103
+#: public/class-casa_courses-public.php:296
+#: public/class-casa_courses-public.php:400
+msgid "Next available date"
+msgstr "Nästa start"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:109
+msgid "Timezone"
+msgstr "Tidzon"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:121
+msgid "Template ID"
+msgstr "Kursmall ID"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:127
+msgid "Event Name"
+msgstr "Kurstillfällesnamn"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:133
+msgid "Max Participant Count"
+msgstr "Max antal deltagare"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:139
+msgid "Available seats"
+msgstr "Tillgängliga platser"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:145
+msgid "Venue City"
+msgstr "Ort"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:151
+msgid "Venue Name"
+msgstr "Platsnamn"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:157
+#: includes/init/class-casa_courses-custom-taxonomy_areas.php:79
+msgid "Order"
+msgstr "Ordning"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:163
+#: includes/init/class-casa_courses-custom-posttype_events.php:183
+msgid "Sessions"
+msgstr "Kursdelar"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:175
+msgid "Dates"
+msgstr "Datum"
+
+#: includes/init/class-casa_courses-custom-posttype_events.php:179
+msgid "Information"
+msgstr "Information"
+
+#: includes/init/class-casa_courses-custom-taxonomy_areas.php:27
+#: includes/init/class-casa_courses-custom-taxonomy_areas.php:29
+msgid "Course areas"
+msgstr "Kursområden"
+
+#: includes/init/class-casa_courses-custom-taxonomy_areas.php:30
+msgid "Course area"
+msgstr "Kursområde"
+
+#: includes/init/class-casa_courses-custom-taxonomy_areas.php:87
+msgid "Area Description:"
+msgstr "Beskrivning:"
+
+#: includes/init/class-casa_courses-custom-taxonomy_areas.php:108
+msgid "Areas Image:"
+msgstr "Bild:"
+
+#: includes/worker/class-casa_courses-worker-custom_post_courses.php:29
+msgid "No courses found"
+msgstr "Inga kurser"
+
+#: includes/worker/class-casa_courses-worker-custom_post_courses.php:32
+msgid "Courses updated"
+msgstr "Kurser uppdaterade"
+
+#: includes/worker/class-casa_courses-worker-custom_post_events.php:39
+msgid "No events found"
+msgstr "Inga kurstillfällen"
+
+#: includes/worker/class-casa_courses-worker-custom_post_events.php:42
+msgid "Events updated"
+msgstr "Kurstillfällen uppdaterade"
+
+#: includes/worker/class-casa_courses-worker-dietary_preferences.php:35
+msgid "No dietary preferences found"
+msgstr "Inga kostpreferenser"
+
+#: includes/worker/class-casa_courses-worker-dietary_preferences.php:39
+msgid "Dietary preferences updated"
+msgstr "Kostpreferenser uppdaterade"
+
+#: includes/worker/class-casa_courses-worker-industry.php:33
+msgid "No industries found"
+msgstr "Inga branscher"
+
+#: includes/worker/class-casa_courses-worker-industry.php:37
+msgid "Industries updated"
+msgstr "Branscher uppdaterade"
+
+#: includes/worker/class-casa_courses-worker-taxonomy_areas.php:38
+msgid "No areas found"
+msgstr "Det finns inga kursområden"
+
+#: includes/worker/class-casa_courses-worker-taxonomy_areas.php:43
+msgid "Areas updated"
+msgstr "Kursområden uppdaterade"
+
+#: metabox/src/BooMeta.php:146
+msgid "Meta Fields"
+msgstr "Meta fält"
+
+#: metabox/src/BooMetaFields.php:226 metabox/src/BooMetaFields.php:237
+msgid "Remove"
+msgstr "Radera"
+
+#: metabox/src/BooMetaFields.php:242
+msgid "Add another"
+msgstr "Lägg till"
+
+#: public/class-casa_courses-public.php:295
+#: public/class-casa_courses-public.php:399
+#: public/class-casa_courses-public.php:490
+msgid "Course Name"
+msgstr "Kursnamn"
+
+#: public/class-casa_courses-public.php:500
+msgid "There are no active events available"
+msgstr "Det finns inga kurstillfällen"
+
+#: public/class-casa_courses-public.php:586
+msgid "Upcoming dates"
+msgstr "Kommande datum"
+
+#: public/class-casa_courses-public.php:596
+msgid "Venue"
+msgstr "Plats"
+
+#: public/class-casa_courses-public.php:633
+#: public/class-casa_courses-public.php:768
+msgid "Notify me"
+msgstr "Bevaka"
+
+#: public/class-casa_courses-public.php:669
+msgid "Booked:"
+msgstr "Bokade:"
+
+#: public/class-casa_courses-public.php:672
+msgid "Not Booked:"
+msgstr "Ej bokade:"
+
+#: public/class-casa_courses-public.php:785
+msgid "Choose the event you want to book *"
+msgstr "Välj tillfället du vill boka *"
+
+#: public/class-casa_courses-public.php:801
+msgid "Please choose event date"
+msgstr "Vänligen välj kursstart"
+
+#: public/class-casa_courses-public.php:815
+msgid "Corporate Information"
+msgstr "Företagsinformation"
+
+#: public/class-casa_courses-public.php:820
+#: public/class-casa_courses-public.php:824
+msgid "Corporate Name"
+msgstr "Företagsnamn"
+
+#: public/class-casa_courses-public.php:826
+msgid "Please fill a corporate name"
+msgstr "Vänligen ange ett företagsnamn"
+
+#: public/class-casa_courses-public.php:832
+#: public/class-casa_courses-public.php:836
+msgid "Invoice Address"
+msgstr "Fakturaadress"
+
+#: public/class-casa_courses-public.php:838
+msgid "Please provide a valid invoice address"
+msgstr "Vänligen ange en giltig fakturaadress"
+
+#: public/class-casa_courses-public.php:845
+#: public/class-casa_courses-public.php:849
+msgid "Zip Code"
+msgstr "Postnummer"
+
+#: public/class-casa_courses-public.php:851
+msgid "Please provide a valid zip."
+msgstr "Vänligen ange ett postnummer."
+
+#: public/class-casa_courses-public.php:856
+#: public/class-casa_courses-public.php:860
+msgid "City"
+msgstr "Ort"
+
+#: public/class-casa_courses-public.php:862
+msgid "Please provide a valid city."
+msgstr "Vänligen ange en ort."
+
+#: public/class-casa_courses-public.php:869
+#: public/class-casa_courses-public.php:872
+msgid "E-Invoice Address"
+msgstr "E-postadress för faktura"
+
+#: public/class-casa_courses-public.php:874
+msgid "Please provide a valid e-invoice address"
+msgstr "Vänligen ange en giltig e-postadress"
+
+#: public/class-casa_courses-public.php:880
+#: public/class-casa_courses-public.php:884
+msgid "Corporate ID"
+msgstr "Organisationsnummer"
+
+#: public/class-casa_courses-public.php:886
+msgid "Please provide a valid corporate ID"
+msgstr "Vänligen ange ett organsiationsnummer"
+
+#: public/class-casa_courses-public.php:898
+msgid "Industry"
+msgstr "Bransch"
+
+#: public/class-casa_courses-public.php:902
+msgid "Select Industry"
+msgstr "Välj bransch"
+
+#: public/class-casa_courses-public.php:908
+msgid "Please select a valid industry."
+msgstr "Vänligen ange en bransch."
+
+#: public/class-casa_courses-public.php:918
+msgid "Contact Information"
+msgstr "Kontaktinformation"
+
+#: public/class-casa_courses-public.php:922
+#: public/class-casa_courses-public.php:925
+#: public/class-casa_courses-public.php:988
+#: public/class-casa_courses-public.php:992
+#: public/class-casa_courses-public.php:1085
+#: public/class-casa_courses-public.php:1088
+#: public/class-casa_courses-public.php:1179
+#: public/class-casa_courses-public.php:1183
+msgid "First name"
+msgstr "Förnamn"
+
+#: public/class-casa_courses-public.php:927
+#: public/class-casa_courses-public.php:994
+#: public/class-casa_courses-public.php:1090
+#: public/class-casa_courses-public.php:1185
+msgid "Please fill a first name"
+msgstr "Vänligen ange ditt förnamn"
+
+#: public/class-casa_courses-public.php:933
+#: public/class-casa_courses-public.php:936
+#: public/class-casa_courses-public.php:1000
+#: public/class-casa_courses-public.php:1004
+#: public/class-casa_courses-public.php:1096
+#: public/class-casa_courses-public.php:1099
+#: public/class-casa_courses-public.php:1191
+#: public/class-casa_courses-public.php:1195
+msgid "Last name"
+msgstr "Efternamn"
+
+#: public/class-casa_courses-public.php:938
+#: public/class-casa_courses-public.php:1006
+#: public/class-casa_courses-public.php:1101
+#: public/class-casa_courses-public.php:1197
+msgid "Please fill a last name"
+msgstr "Vänligen ange ditt efternamn"
+
+#: public/class-casa_courses-public.php:945
+#: public/class-casa_courses-public.php:948
+msgid "E-mail"
+msgstr "E-postadress"
+
+#: public/class-casa_courses-public.php:950
+#: public/class-casa_courses-public.php:1019
+#: public/class-casa_courses-public.php:1113
+#: public/class-casa_courses-public.php:1210
+msgid "Please fill a email"
+msgstr "Vänligen ange en e-postadress"
+
+#: public/class-casa_courses-public.php:956
+#: public/class-casa_courses-public.php:959
+msgid "Phone nr"
+msgstr "Telefonnummer"
+
+#: public/class-casa_courses-public.php:961
+#: public/class-casa_courses-public.php:1031
+#: public/class-casa_courses-public.php:1125
+#: public/class-casa_courses-public.php:1222
+msgid "Please fill a phone"
+msgstr "Vänligen ange ett telefonnummer"
+
+#: public/class-casa_courses-public.php:971
+msgid "I will also participate"
+msgstr "Jag kommer också delta"
+
+#: public/class-casa_courses-public.php:977
+msgid "Participant Information"
+msgstr "Deltagarinformation"
+
+#: public/class-casa_courses-public.php:984
+#: public/class-casa_courses-public.php:1076
+#: public/class-casa_courses-public.php:1169
+msgid "Participant"
+msgstr "Deltagare"
+
+#: public/class-casa_courses-public.php:1013
+#: public/class-casa_courses-public.php:1017
+#: public/class-casa_courses-public.php:1108
+#: public/class-casa_courses-public.php:1111
+#: public/class-casa_courses-public.php:1204
+#: public/class-casa_courses-public.php:1208
+msgid "Email"
+msgstr "E-postadress"
+
+#: public/class-casa_courses-public.php:1042
+#: public/class-casa_courses-public.php:1136
+#: public/class-casa_courses-public.php:1233
+msgid "Dietary Preferences"
+msgstr "Kostpreferens"
+
+#: public/class-casa_courses-public.php:1046
+#: public/class-casa_courses-public.php:1140
+#: public/class-casa_courses-public.php:1237
+msgid "Select Dietary preferences"
+msgstr "Välj kostpreferens"
+
+#: public/class-casa_courses-public.php:1052
+#: public/class-casa_courses-public.php:1146
+#: public/class-casa_courses-public.php:1243
+msgid "Please select a valid dietary preference"
+msgstr "Vänligen ange en kostpreferens"
+
+#: public/class-casa_courses-public.php:1058
+#: public/class-casa_courses-public.php:1062
+#: public/class-casa_courses-public.php:1152
+#: public/class-casa_courses-public.php:1156
+#: public/class-casa_courses-public.php:1249
+#: public/class-casa_courses-public.php:1254
+msgid "Custom Dietary Preferences"
+msgstr "Övrig kostpreferens"
+
+#: public/class-casa_courses-public.php:1064
+#: public/class-casa_courses-public.php:1158
+#: public/class-casa_courses-public.php:1256
+msgid "Please provide a valid text"
+msgstr "Vänligen ange"
+
+#: public/class-casa_courses-public.php:1271
+msgid "+ Add participants"
+msgstr "+ Lägg till deltagare"
+
+#: public/class-casa_courses-public.php:1283
+msgid "Booking Policy"
+msgstr "Bokningspolicy"
+
+#: public/class-casa_courses-public.php:1284
+#: public/class-casa_courses-public.php:1301
+msgid "Read More"
+msgstr "Läs mer"
+
+#: public/class-casa_courses-public.php:1300
+msgid "Privacy Policy"
+msgstr "Personuppgiftspolicy"
+
+#: public/class-casa_courses-public.php:1352
+msgid "Skip to content"
+msgstr "Hoppa till innehållet"
+
+#: templates/single-course.php:89
+msgid "Price and duration"
+msgstr "Pris och längd"
+
+#: templates/single-course.php:102
+msgid "Your price"
+msgstr "Ditt pris"
+
+#: templates/single-course.php:105
+msgid "Regular price"
+msgstr "Ordinarie pris"
+
+#. translators: %s: number of days in course
+#: templates/single-course.php:119 templates/single-course.php:127
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s dag"
+msgstr[1] "%s dagar"
+
+#~ msgid "Participants: This field is required."
+#~ msgstr "Deltagare: Detta fält är obligatorisk."
+
+#~ msgid "Reserve Participants"
+#~ msgstr "Reserverade detagare"
+
+#~ msgid "Preliminary Participants"
+#~ msgstr "Preliminära deltagare"
+
+#~ msgid "Form"
+#~ msgstr "Formulär"
+
+#~ msgid "Home Page"
+#~ msgstr "Hem"
+
+#~ msgid "Custom Dietary Preferences "
+#~ msgstr "Övrig kostpreferens"
+
+#~ msgid "Place"
+#~ msgstr "Plats"
+
+#~ msgid "Areas TextBox:"
+#~ msgstr "Beskrivning för kursområde:"
+
+#~ msgid "Organization number:"
+#~ msgstr "Organisationsnummer:"
+
+#~ msgid "Booking page title"
+#~ msgstr "Rubrik"
+
+#~ msgid "There is currently <strong>%1$s</strong> areas loaded from Casa."
+#~ msgstr ""
+#~ "Det finns för närvarande <strong>%1$s</strong> kursområden inlästa från "
+#~ "Casa."
+
+#~ msgid "Headers"
+#~ msgstr "Huvud"
+
+#~ msgid "Areas"
+#~ msgstr "Kursområden"
+
+#~ msgid "Area"
+#~ msgstr "Kursområde"
+
+#~ msgid "Once 5 Hourly"
+#~ msgstr "En gång var 5:te timme"

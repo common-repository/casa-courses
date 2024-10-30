@@ -1,0 +1,9 @@
+.form-casa__courses {
+  .few-seats-remaining {
+    color: var(--casa-few-seats-remaining-color, #ffc107);
+  }
+
+  .fully-booked {
+    color: var(--casa-fully-booked-color, #dc3545);
+  }
+}

@@ -1,0 +1,34 @@
+@import "base/normalize";
+@import "base/mixins";
+@import "base/global";
+@import "base/bootstrap.min.css";
+@import "book-casa-courses";
+@import "single-casa-courses";
+@import "home-casa-courses";
+@import "table-casa-courses";
+@import "parts/index";
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ html {
+  @include desktop-medium {
+    background-color: black !important;
+  }
+
+  .fa-book__form {
+    .book-btn  {
+      color: var(--casa-booking-btn-color, #fff);
+      background-color: var(--casa-booking-btn-bg-color, #008b86);
+    }
+  }
+ }
+
+ .home-casa__courses,
+ .area-casa-courses,
+ .calendar-casa__courses,
+ .form-casa__courses,
+ .course-detail {
+  font-family: var(--casa-font-family, --wp--preset--font-family--system-sans-serif);
+ }

@@ -1,0 +1,106 @@
+.single-casa_courses {
+    .course-detail {
+        .content {
+            margin-bottom: 20px;
+
+            & > p {
+                margin-top: 0;
+            }
+        }
+
+        .description {
+            h2 {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        height: var(--bs-card-height);
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        margin-top: 40px;
+        margin-bottom: clamp-calc(35px, 50px);
+
+        @include desktop-small {
+            margin-top: 0;
+        }
+
+        .card-header {
+            padding: 0.5rem 1rem;
+            color: var(--casa-price-head-color, #04f59f);
+            background-color: var(--casa-price-head-bg-color, #024b54);
+        }
+
+        .card-body {
+            flex: 1 1 auto;
+            padding: 1rem;
+            color: var(--bs-card-color);
+            border-bottom-left-radius: 0.375rem;
+            border-bottom-right-radius: 0.375rem;
+            border: 1px solid var(--casa-price-head-border-color, #024b54);
+            border-top: unset;
+
+            .card-text {
+                text-align: var(--casa-price-position, left);
+            }
+        }
+
+        .template-price {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .template-length {
+            font-size: 0.9rem;
+        }
+    }
+
+    .aside {
+        .upcoming__events {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    .event {
+        border-radius: 4px;
+        padding: 0.625rem;
+        background-color: var(--casa-event-box-bg-color, #50a29e);
+        color: var(--casa-event-box-color, #fff);
+        margin-bottom: 20px;
+
+        h4 {
+            margin: 12px 0;
+            color: #ffffff;
+        }
+
+        p {
+            margin: 6px 0;
+        }
+
+        a.book-btn {
+            color: var(--casa-event-box-btn-color, #fff);
+            background-color: var(--casa-event-box-btn-bg-color, #3b784c);
+        }
+
+        .few-seats-remaining {
+            color: var(--casa-few-seats-remaining-color, #ffc107);
+        }
+
+        .fully-booked {
+            color: var(--casa-fully-booked-color, #dc3545);
+        }
+    }
+
+    .book {
+        margin: 12px 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,490 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+body.taxonomy-casa_courses_areas .term-description-wrap,
+body.taxonomy-casa_courses_areas .term-parent-wrap {
+  display: none;
+}
+
+.casa__general {
+  font-family: "Roboto", sans-serif;
+}
+
+.casa__general form {
+  display: grid;
+  padding: 21px 24px;
+
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+  justify-content: center;
+
+  border-top: 1px solid #f0f0f1;
+  border-bottom: 1px solid #f0f0f1;
+}
+
+.casa__general .casa__general_token {
+  background-color: white;
+  width: max-content;
+  background-color: white;
+  border-radius: 4px;
+  max-width: max-content;
+  width: 100%;
+  min-width: 640px;
+}
+
+.casa__general_token-title {
+  padding: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 0;
+}
+
+.casa_token_info {
+  width: 100%;
+  max-width: 592px;
+  padding: 24px;
+  background: white;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.alert_message {
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+
+  &.success {
+    color: #2d8e3a;
+  }
+
+  &.error {
+    color: #ae2131;
+  }
+}
+
+.form_casa_courses_settings .form-table th {
+  vertical-align: middle;
+}
+
+.casa__general_token-title .casa__status-inactive {
+  color: #ae2131;
+}
+
+.casa__general_token-title .casa__status-active {
+  color: #2d8e3a;
+}
+
+.casa__general form table {
+  margin: 0;
+}
+
+.casa__general form .form-table th {
+  width: auto;
+}
+
+.casa__general form .submit {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.casa__general form .ps-remove__token {
+  border-color: #d82830;
+  color: #d82830;
+}
+
+.casa__general form .regular-text::placeholder {
+  color: #acacac;
+  opacity: 1; /* Firefox */
+}
+
+.casa__general form .ps-remove__token:hover {
+  border-color: #fdb2b5;
+  color: #f8454d;
+}
+
+.ps-field-group {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ps-field-group .ps-field-label {
+  font-weight: 500;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#casa__general_form .ps-token-error {
+  color: red;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.casa_integration_flex {
+  display: flex;
+  column-gap: 24px;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media screen and (min-width: 1024px) {
+    //flex-direction: row;
+  }
+}
+
+.casa_integration_wrap-box {
+  width: 100%;
+  //max-width: 600px;
+  margin-top: 24px;
+}
+
+.casa_integration-box-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  background-color: white;
+  font-family: Roboto, sans-serif;
+  border-bottom: 1px solid #f0f0f1;
+  //cursor: pointer;
+}
+
+.casa_integration-box-header h2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 24px 24px 27px;
+  position: relative;
+  color: black;
+}
+
+/*
+  .casa_integration-box-header h2::before {
+    content: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.8 0.600006L4.964 7.8L0.200001 0.600006L9.8 0.600006Z' fill='%232C3338'/%3E%3C/svg%3E");
+    width: 10px;
+    height: 8px;
+    position: absolute;
+    right: 30px;
+  }
+  */
+
+.casa_integration-box-body {
+  background-color: white;
+  //max-width: 552px;
+  padding: 24px 24px 27px;
+
+  .dashicons-editor-help {
+    cursor: help;
+  }
+}
+
+.casa_integration-box-body .form-table {
+  margin-top: 0;
+
+  .wp-editor-wrap iframe {
+    min-height: 210px !important;
+  }
+}
+
+.casa_integration-box-body .form-table .casa_input {
+  min-width: 240px;
+  max-width: 240px;
+
+  &[type="number"] {
+    max-width: 70px;
+    min-width: 70px;
+  }
+}
+
+.form_casa_courses_synchronization {
+  td {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: initial;
+    }
+  }
+
+  .button-primary {
+    width: initial;
+    padding: 0.1rem 4rem;
+  }
+}
+
+.casa_integration-box-body .submit {
+  padding: 0;
+}
+
+.casa_textarea_wrap,
+.casa_image_wrap {
+  display: inline-flex;
+  gap: 10px;
+  font-family: monospace;
+  line-height: 1.44;
+  border-radius: 2px;
+  padding: 2px 10px;
+}
+
+.casa_image_wrap {
+  flex-direction: column;
+}
+
+.casa_courses-file-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .casa__courses-link,
+  .casa__courses_icon-link {
+    a.delete {
+      color: #b32d2e;
+      border: none;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+div.img-wrap img {
+  max-width: 300px;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.line-numbers {
+  width: 20px;
+  text-align: right;
+  margin-top: 3px;
+}
+
+.line-numbers span {
+  counter-increment: linenumber;
+}
+
+.line-numbers span::before {
+  content: counter(linenumber);
+  display: block;
+  color: #acacac;
+}
+
+.form_casa_integration_custom_css table td {
+  padding: 0;
+}
+
+.form_casa_integration_custom_css table .casa_textarea_wrap {
+  padding: 0;
+}
+
+.form_casa_integration_custom_css table th {
+  width: 0;
+  padding: 0;
+}
+
+#casa_integration_custom_css {
+  line-height: 1.44;
+  overflow-y: auto;
+  border: 1px solid #acacac;
+  color: #acacac;
+  min-width: 552px;
+  resize: none;
+}
+
+.form_casa_courses_information table th {
+  display: none;
+}
+
+.form_casa_courses_information table td p:first-child {
+  margin-bottom: 15px;
+}
+
+.casa_integration-shortcode-wrap {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.casa_integration-box-body .form-table .casa_integration-shortcode-wrap input {
+  min-width: auto;
+}
+
+.shortcode_message.success {
+  color: green;
+}
+
+.shortcode_message.err {
+  color: red;
+}
+
+toggle::after {
+  display:block;
+  clear:both;
+  content:"";
+}
+toggle input {
+  position:absolute;
+  left:-99999999px;
+}
+toggle svg {
+  height:20px;
+  width:20px;
+  display:block;
+}
+toggle label div {
+  display:block;
+  float:left;
+  padding:6px 12px;
+  border:solid 1px rgb(160,160,160);
+  fill:gray;
+  position: relative;
+}
+toggle label:first-child div {
+  border-radius:5px 0 0 5px;
+  left: 1px;
+}
+toggle label:last-child div {
+  border-radius:0 5px 5px 0;
+  right: 1px;
+}
+toggle input:checked ~ div {
+  color:white;
+  fill:white;
+  background-color: #135e96;
+  border-color: #135e96;
+  z-index:1;
+}
+
+@media screen and (max-width: 782px) {
+  .casa__general form {
+    grid-template-columns: 1fr;
+    width: auto;
+    justify-items: center;
+    grid-row-gap: 15px;
+    padding: 20px;
+  }
+
+  .casa__general form .regular-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .casa__general .casa__general_token {
+    width: 100%;
+    min-width: initial;
+    max-width: initial;
+  }
+
+  .casa_token_info {
+    max-width: 100%;
+    width: initial;
+  }
+
+  #casa__general_form .ps-token-error {
+    margin-left: 0;
+  }
+
+  .ps-field-group {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .ps-field-group .ps-field-label {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .casa__general form .submit {
+    margin-left: 0;
+  }
+
+  #casa_integration_custom_css {
+    min-width: initial;
+  }
+}
+
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.com-tab-group {
+  margin: 0;
+  list-style: none;
+  display: block;
+  padding: 10px 10px 0;
+  position: relative;
+  border-bottom: #ccd0d4 solid 1px;
+  z-index: 2;
+  margin-bottom: -1px;
+  border-top: none;
+}
+
+.com-tab-group:before {
+  content: "";
+  display: block;
+  line-height: 0;
+}
+
+.com-tab-group:after {
+  content: "";
+  display: block;
+  line-height: 0;
+  clear: both;
+}
+
+.com-tab-group > li {
+  float: left;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.com-tab-group li {
+  margin: 0 0.5em 0 0;
+}
+
+.com-tab-group li a {
+  background: #f1f1f1;
+  border-color: #ccd0d4;
+  padding: 5px 10px;
+  display: block;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  border: #ccc solid 1px;
+  border-bottom: 0 none;
+  text-decoration: none;
+  transition: none;
+}
+
+.com-tab-group li.active a {
+  background: #ffffff;
+}
+
+.metadata-wrap.active {
+  width: 100%;
+}
+
+.metadata-wrap .error {
+  color: #d63638;
+}
+
+.com-tab-button.error {
+  border: 1px solid #d63638;
+}

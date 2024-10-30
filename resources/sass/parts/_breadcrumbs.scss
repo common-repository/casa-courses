@@ -1,0 +1,35 @@
+.casa-course__breadcrumb {
+    padding-top: 1rem;
+
+    @include tablet-down {
+        display: none;
+    }
+
+    .breadcrumb {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 1rem;
+
+        .breadcrumb-item {
+            a {
+                color: var(--casa-secondary-color, #04f59f);
+            }
+
+            & + .breadcrumb-item {
+                padding-left: 0.5rem;
+
+                &::before {
+                    padding-right: 0.5rem;
+                    color: #6c757d;
+                    content: "/";
+                }
+            }
+
+            &.active {
+                color: #6c757d;
+            }
+        }
+    }
+}

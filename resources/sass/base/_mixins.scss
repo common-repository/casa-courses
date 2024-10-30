@@ -1,0 +1,132 @@
+@use "sass:math";
+
+$mobile-small-width: 375px;
+$tablet-small-width: 480px;
+$tablet-width: 768px;
+$desktop-small-width: 992px;
+$desktop-medium-width: 1285px;
+$desktop-large-width: 1440px;
+$desktop-x-large-width: 1680px;
+$desktop-xx-large-width: 1920px;
+
+@function decimal-round($number, $digits: 0) {
+  $n: 1;
+  @for $i from 1 through $digits {
+    $n: $n * 10;
+  }
+  @return math.div(round($number * $n), $n);
+}
+
+@function clamp-calc(
+  $size-at-min-width,
+  $size-at-max-width,
+  $min-width: 390px,
+  $max-width: 1440px
+) {
+  $slope: calc(($size-at-max-width - $size-at-min-width) / ($max-width - $min-width));
+  $y-axis-intersection: -1 * $min-width * $slope + $size-at-min-width;
+
+  @return clamp(
+    #{$size-at-min-width},
+    #{$y-axis-intersection} + #{$slope} * 100vw,
+    #{$size-at-max-width}
+  );
+}
+
+@function rem($target, $baseFontSize: 16) {
+  @return math.div($target, $baseFontSize) * 1rem;
+}
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+// relative viewport width value
+@function m-vw($value, $maxContainer: 1280) {
+  $number: math.div($value * 100, $maxContainer);
+  $result: #{decimal-round($number, 2)}vw;
+  @return calc($result + 1px);
+}
+
+@mixin adaptive-value(
+  $property,
+  $startSize,
+  $minSize,
+  $size: 320,
+  $width: 1280
+) {
+  $addSize: $startSize - $minSize;
+
+  #{$property}: calc(
+    #{$minSize + px} + #{$addSize} *
+      ((100vw - #{$size + px}) / #{$width - $size})
+  );
+}
+
+@mixin mobile-small {
+  @media screen and (min-width: #{$mobile-small-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-small {
+  @media screen and (min-width: #{$tablet-small-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-down {
+  @media screen and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-small {
+  @media screen and (min-width: #{$desktop-small-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-small-down {
+  @media screen and (max-width: #{$desktop-small-width - 1}) {
+    @content;
+  }
+}
+
+@mixin desktop-medium {
+  @media screen and (min-width: #{$desktop-medium-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-medium-down {
+  @media screen and (max-width: #{$desktop-medium-width - 1}) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media screen and (min-width: #{$desktop-large-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-x-large {
+  @media screen and (min-width: #{$desktop-x-large-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-xx-large {
+  @media screen and (min-width: #{$desktop-xx-large-width}) {
+    @content;
+  }
+}
